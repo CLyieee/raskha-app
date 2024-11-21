@@ -13,7 +13,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({
 }) => {
   return (
     <div className="flex flex-col md:flex-row h-screen">
-      <div className="bg-[#e8e6f7] w-full md:w-1/3 p-4 border">
+      <div className="bg-[#e8e6f7] w-full md:w-1/2 p-1 border">
         {leftContent} {/* Render left section content */}
       </div>
 
@@ -23,7 +23,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({
         </div>
       </div>
 
-      <div className="bg-[#f7e6e6] w-full md:w-1/3 p-4 border">
+      <div className="bg-[#f7e6e6] w-full md:w-1/2 p-1 border">
         {rightContent} {/* Render right section content */}
       </div>
     </div>
