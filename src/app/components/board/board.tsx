@@ -8,7 +8,7 @@ const Board = () => {
       rowElements.push(
         <div
           key={`${row}-${col}`}
-          className="border border-black flex-1 aspect-square"
+          className="border border-zinc-600 flex-1 aspect-square"
         />
       );
     }
@@ -20,7 +20,7 @@ const Board = () => {
   }
 
   return (
-    <div className="flex flex-col h-[100vh] w-[90vw] max-w-[100vh] max-h-[90vw] bg-[#FFFCF0]">
+    <div className="flex flex-col h-[90vh] w-[90vw] max-w-[90vh] max-h-[90vw] bg-[#FFFCF0] mb-16">
       <div className="flex flex-col flex-1">
         {board}
       </div>

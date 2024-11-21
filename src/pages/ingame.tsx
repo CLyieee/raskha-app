@@ -1,6 +1,8 @@
 import React from 'react';
 import MainLayout from '../app/layouts/MainLayout'; // Adjust the import path as necessary
 import Board from '../app/components/board/board';
+import Player1 from '../app/components/player/player1';
+import Player2 from '../app/components/player/player2';
 
 const Game: React.FC = () => {
   // Define middleContent to include the Board component
@@ -25,9 +27,9 @@ const Game: React.FC = () => {
 
   return (
     <MainLayout
-      leftContent={left}
+      leftContent={<Player1 />}
       middleContent={middleContent}
-      rightContent={right}
+      rightContent={<Player2 />}
     />
   );
 };
